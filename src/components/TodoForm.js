@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 
-function TodoForm(props) {
+function TodoForm(props) { // pull data from parent to child
   const [input, setInput] = useState(props.edit ? props.edit.value : '');
 
   const inputRef = useRef(null);
@@ -14,7 +14,7 @@ function TodoForm(props) {
   };
 
   const handleSubmit = e => {
-    e.preventDefault();
+    e.preventDefault();  
 
     props.onSubmit({
       id: Math.floor(Math.random() * 10000),
