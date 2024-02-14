@@ -6,11 +6,17 @@ import './App.css';
 
 function App() {
   const [todos, setTodos] = useState([]);
+  const [user, setUser] = useState(null);
 
 //useEffect
 useEffect(() => { 
 
- 
+ if (window.localStorage.getItem('userName')) {
+  setUser({
+    userName: window.localStorage.getItem('userName')
+  })
+   return
+ }
  
  //Connects to the backend
 const fetchData = async () => {
@@ -28,7 +34,8 @@ fetchData();
 
   return (
     <div className="todo-app">
-     <TodoList/>
+      {user ? <TodoList /> : <MainPage onSignIn={userName => setUser({userName})}/>}
+    
      
     
     </div>
