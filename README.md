@@ -1,3 +1,20 @@
+Sources:
+https://www.youtube.com/watch?v=hlwlM4a5rxg
+
+https://www.youtube.com/watch?v=E1E08i2UJGI&t=2020s
+
+https://www.youtube.com/watch?v=BqRWK57dwqo&t=670s
+
+New feature updates coming soon!
+
+Habit tracker 
+
+Fitness tracker
+
+The ability to share progress with friends 
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
